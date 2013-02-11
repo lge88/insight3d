@@ -1927,7 +1927,7 @@ void calibration_bundle()
 
 		int i;
 		printf("computed initial error %f [%f]\n", sum_err, sum_err / m);
-	
+		scanf("%d", &i);
 	}*/
 
 	// * additional settings and info *
@@ -1949,7 +1949,6 @@ void calibration_bundle()
 	sba_motstr_levmar(
 		Xs_count,
 		Ps_count,
-		0,
 		0,
 		visibility_mask,
 		parameters,

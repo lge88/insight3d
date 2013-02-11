@@ -8,7 +8,7 @@
 
 # Include dir
 find_path(GDK_PIXBUF_INCLUDE_DIR
-  gdk-pixbuf/gdk-pixbuf.h PATH_SUFFIXES gdk-pixbuf-2.0/
+  gdk-pixbuf/gdk-pixbuf.h PATH_SUFFIXES gtk-2.0/
 )
 
 find_library(GDK_PIXBUF_LIBRARY gdk_pixbuf-2.0)

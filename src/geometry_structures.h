@@ -32,11 +32,11 @@
 // Rob Hess's SIFT library 
 extern "C" { 
 #ifndef _MSC_VER
-#include "sift.h"
-#include "imgfeatures.h"
-#include "kdtree.h"
-#include "utils.h"
-#include "xform.h"
+#include "./sift/include/sift.h"
+#include "./sift/include/imgfeatures.h"
+#include "./sift/include/kdtree.h"
+#include "./sift/include/utils.h"
+#include "./sift/include/xform.h"
 #else
 #include "./sift_win/sift.h"
 #include "./sift_win/imgfeatures.h"

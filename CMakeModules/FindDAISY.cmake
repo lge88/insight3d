@@ -8,11 +8,13 @@
 
 # Include dir
 find_path(DAISY_INCLUDE_DIR
+  PATHS ext/libdaisy/include
   NAMES daisy.h daisy/
 )
 
 # Finally the library itself
 find_library(DAISY_LIBRARY
+  PATHS ext/libdaisy/release/lib
   NAMES daisy
 )
 

@@ -8,11 +8,13 @@
 
 # Include dir
 find_path(SBA_INCLUDE_DIR
-  sba.h PATH_SUFFIXES sba/
+  sba/sba.h 
+  PATHS ext
 )
 
 # Finally the library itself
 find_library(SBA_LIBRARY
+  PATHS ext/sba
   NAMES sba
 )
 

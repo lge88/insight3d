@@ -13,7 +13,7 @@ find_path(ANN_INCLUDE_DIR
 
 # Finally the library itself
 find_library(ANN_LIBRARY
-  NAMES ann
+  NAMES ann ANN
 )
 
 INCLUDE(FindPackageHandleStandardArgs)

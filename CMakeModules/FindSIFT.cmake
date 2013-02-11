@@ -8,11 +8,13 @@
 
 # Include dir
 find_path(SIFT_INCLUDE_DIR
- sift.h PATH_SUFFIXES sift/
+ sift.h
+ PATHS ext/sift/include
 )
 
 # Finally the library itself
 find_library(SIFT_LIBRARY
+  PATHS ext/sift/lib
   NAMES feat
 )
 
