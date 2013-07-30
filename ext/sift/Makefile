@@ -9,12 +9,15 @@ BIN	= siftfeat match dspfeat
 
 all: $(BIN) libfeat.a docs
 
+lib:
+	mkdir -p $(LIB_DIR)
+
 docs:
 
-libfeat.a:
+libfeat.a: lib
 	make -C $(SRC_DIR) $@
 
-$(BIN):
+$(BIN): lib
 	make -C $(SRC_DIR) $@
 
 clean:
